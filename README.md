@@ -66,7 +66,7 @@ Vista de la aplicación con todas las ramas integradas y resueltas:
 
 ---
 
-## 🛠️ Nota Técnica sobre la Estructura de Recursos
+## Nota Técnica sobre la Estructura de Recursos
 
 Durante la ejecución inicial del proyecto se detectó que la lectura del archivo de datos y las carátulas se realizaba mediante rutas relativas (`top10.csv` y `img/`). Al ejecutarse el entorno desde la raíz del repositorio, se generaba un error de tipo `FileNotFoundException`.
 
