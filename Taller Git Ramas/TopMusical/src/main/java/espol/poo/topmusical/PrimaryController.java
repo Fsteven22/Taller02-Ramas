@@ -32,7 +32,7 @@ public class PrimaryController {
     public void initialize() {
         listaCanciones = Cancion.leerCanciones();
         Collections.sort(listaCanciones);
-        for (Cancion c : listaCanciones ) {
+        for (Cancion c : listaCanciones) {
 
             HBox hb = new HBox(10); // HBox para ubicar info de cada canción
             Label lbp = new Label(c.getPosActual() + "");
@@ -45,7 +45,9 @@ public class PrimaryController {
             } catch (FileNotFoundException ex) {
                 ex.printStackTrace();
             }
-            Label lbT = new Label(c.getTitulo() + " \n" + c.getCantante()); // Título y cantante
+
+            // CORRECCIÓN 1: Formato "Artista - Nombre Canción" para la lista del Top 10
+            Label lbT = new Label(c.getCantante() + " - " + c.getTitulo()); 
             lbT.setStyle("-fx-font-weight: bold;-fx-font-size: 14;");
 
             hb.getChildren().addAll(lbp, iv, lbT); // Agregar al HBox
@@ -57,7 +59,6 @@ public class PrimaryController {
     }
 
     private void mostrarHistorial(Cancion c) {
-        // CAMBIO APLICADO AQUÍ: Formato "Artista - Nombre Canción"
         lblTitulo.setText(c.getCantante() + " - " + c.getTitulo());
 
         try {
