@@ -30,6 +30,7 @@ public class PrimaryController {
     private static ArrayList<Cancion> listaCanciones;
 
     public void initialize() {
+        
         listaCanciones = Cancion.leerCanciones();
         Collections.sort(listaCanciones);
         for (Cancion c : listaCanciones ) {
