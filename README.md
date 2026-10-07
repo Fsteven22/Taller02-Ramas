@@ -63,3 +63,15 @@
 Vista de la aplicación con todas las ramas integradas y resueltas:
 
 ![Captura App Final Unificada](capturas/captura_final.png)
+
+---
+
+## 🛠️ Nota Técnica sobre la Estructura de Recursos
+
+Durante la ejecución inicial del proyecto se detectó que la lectura del archivo de datos y las carátulas se realizaba mediante rutas relativas (`top10.csv` y `img/`). Al ejecutarse el entorno desde la raíz del repositorio, se generaba un error de tipo `FileNotFoundException`.
+
+Para solventar esto de forma limpia y garantizar que el proyecto se ejecute de manera inmediata en cualquier entorno sin alterar la lógica interna del código fuente, se ubicaron:
+* El archivo `top10.csv` en la raíz del repositorio.
+* La carpeta `img/` con las carátulas correspondientes en la raíz del repositorio.
+
+Con este ajuste, la aplicación localiza correctamente los recursos desde el inicio de la ejecución.
