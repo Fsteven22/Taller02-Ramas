@@ -46,7 +46,7 @@
 
 ---
 
-## 🔀 Proceso de Fusión y Resolución de Conflictos
+## Proceso de Fusión y Resolución de Conflictos
 
 1. **Estrategia de Integración:**
    * Cada integrante trabajó de forma aislada en su rama local y publicó sus cambios en el repositorio remoto.
@@ -58,7 +58,7 @@
 
 ---
 
-## 🏁 Resultado Final de la Aplicación en `main`
+## Resultado Final de la Aplicación en `main`
 
 Vista de la aplicación con todas las ramas integradas y resueltas:
 
